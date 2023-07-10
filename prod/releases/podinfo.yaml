@@ -10,7 +10,7 @@ metadata:
 spec:
   releaseName: podinfo
   chart:
-    repository: -
+    repository: https://stefanprodan.github.io/podinfo
     name: podinfo
     version: 3.1.0
   values:
