@@ -6,17 +6,17 @@ metadata:
   namespace: prod
   annotations:
     fluxcd.io/automated: "true"
-    fluxcd.io/tag.chart-image: semver:~3.1
+    fluxcd.io/tag.chart-image: flux-test:~3.1
 spec:
   releaseName: podinfo
   chart:
-    repository: https://stefanprodan.github.io/podinfo
+    repository: -
     name: podinfo
     version: 3.1.0
   values:
     image:
-      repository: stefanprodan/podinfo
-      tag: 3.1.5
+      repository: bash
+      tag: latest
     service:
       enabled: true
       type: ClusterIP
